@@ -4,4 +4,4 @@ GET http://localhost:3000 HTTP/1.1
 GET https://cse341-573p.onrender.com HTTP/1.1
 
 ###
-GET http://localhost:8080/contacts
+GET http://localhost:8080/contacts HTTP/1.1
