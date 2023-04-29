@@ -5,3 +5,12 @@ GET https://cse341-573p.onrender.com HTTP/1.1
 
 ###
 GET http://localhost:8080/contacts HTTP/1.1
+
+###
+GET http://localhost:8080/contacts/644d9eafd13f521e8c45cecc HTTP/1.1
+
+###
+GET http://localhost:8080/contacts/644d9edad13f521e8c46047c HTTP/1.1
+
+### 
+GET http://localhost:8080/contacts/644d9ef9d13f521e8c462f88 HTTP/1.1
