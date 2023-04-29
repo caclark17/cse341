@@ -1,0 +1,30 @@
+{
+    "contact": {
+        "firstName": "Jason",
+        "lastName": "Clark",
+        "email": "jasonclark@gmail.com",
+        "favoriteColor": "green",
+        "birthday": "10/11/85"
+    },
+    "contact2": {
+        "firstName": "Emily",
+        "lastName": "Clark",
+        "email": "emilyclark@gmail.com",
+        "favoriteColor": "pink",
+        "birthday": "01/30/12"
+    },
+    "contact3": {
+        "firstName": "Luke",
+        "lastName": "Clark",
+        "email": "lukeclark@gmail.com",
+        "favoriteColor": "blue",
+        "birthday": "10/10/15"
+    },
+    "contact4": {
+        "firstName": "Sydney",
+        "lastName": "Bevington",
+        "email": "sydneybevington@gmail.com",
+        "favoriteColor": "purple",
+        "birthday": "10/19/55"
+    }
+}
