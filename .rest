@@ -20,9 +20,9 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Jo",
+    "firstName": "Richard",
     "lastName": "Lemmon",
-    "email": "olivia@gmail.com",
+    "email": "john@gmail.com",
     "favoriteColor": "yellow",
     "birthday": "01/01/2000"
 }
@@ -41,3 +41,36 @@ content-type: application/json
 
 ### DELETE contact
 DELETE http://localhost:8080/contacts/645d1428050aac0a4e554704 HTTP/1.1
+
+###
+POST https://week3-iayg.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Richard",
+    "lastName": "Lemmon",
+    "email": "john@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": "01/01/2000"
+}
+
+### PUT Contact
+PUT https://week3-iayg.onrender.com/contacts/645d1dfeb48627ffc15bcf42 HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Jason",
+        "lastName": "Clark",
+        "email": "clarkjasonk@gmail.com",
+        "favoriteColor": "black",
+        "birthday": "10/11/85"
+}
+
+### DELETE contact
+DELETE https://week3-iayg.onrender.com/contacts/645d1dfeb48627ffc15bcf42 HTTP/1.1
+
+###
+GET https://week3-iayg.onrender.com/contacts HTTP/1.1
+
+###
+GET https://week3-iayg.onrender.com/contacts/6451371ad13f521e8ccaed0e HTTP/1.1
