@@ -13,7 +13,7 @@ const getSingle = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb
         .getDB()
-        .db()
+        .db('test')
         .collection('contacts')
         .find({ _id: userId});
     result.toArray().then((lists) => {
@@ -30,7 +30,7 @@ const createContact = async (req, res) => {
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    const response = await mongodb.getDB().db().collection('contacts').insertOne(contact);
+    const response = await mongodb.getDB().db('test').collection('contacts').insertOne(contact);
     if (response.acknowledged) {
         res.status(201).json(response);
     } else {
@@ -49,7 +49,7 @@ const updateContact = async (req, res) => {
     };
     const response = await mongodb
         .getDB()
-        .db()
+        .db('test')
         .collection('contacts')
         .replaceOne({ _id: userId }, contact);
     console.log(response);
@@ -62,7 +62,7 @@ const updateContact = async (req, res) => {
 
 const deleteContact = async (req, res) => {
     const userId = new ObjectId(req.params.id);
-    const response = await mongodb.getDB().db().collection('contacts').remove({ _id: userId}, true);
+    const response = await mongodb.getDB().db('test').collection('contacts').deleteOne({ _id: userId}, true);
     console.log(response);
     if (response.deletedCount > 0) {
         res.status(204).send();
