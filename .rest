@@ -20,54 +20,54 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Richard",
-    "lastName": "Lemmon",
-    "email": "john@gmail.com",
-    "favoriteColor": "yellow",
-    "birthday": "01/01/2000"
+    "firstName": "Luke",
+    "lastName": "Clark",
+    "email": "luke@fakeemail.com",
+    "favoriteColor": "blue",
+    "birthday": "10/01/2010"
 }
 
 ### PUT Contact
-PUT http://localhost:8080/contacts/645d17384c01f687f9e8cc1f HTTP/1.1
+PUT http://localhost:8080/contacts/645e819b5c6ca35738f04df2 HTTP/1.1
 content-type: application/json
 
 {
-        "firstName": "Jason",
+        "firstName": "Emily",
         "lastName": "Clark",
-        "email": "clarkjasonk@gmail.com",
-        "favoriteColor": "black",
-        "birthday": "10/11/85"
+        "email": "emily@gmail.com",
+        "favoriteColor": "pink",
+        "birthday": "01/10/2010"
 }
 
 ### DELETE contact
-DELETE http://localhost:8080/contacts/645d1428050aac0a4e554704 HTTP/1.1
+DELETE http://localhost:8080/contacts/645e6a7e260f87020cdc2c7a HTTP/1.1
 
 ###
 POST https://week3-iayg.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Richard",
-    "lastName": "Lemmon",
-    "email": "john@gmail.com",
-    "favoriteColor": "yellow",
+    "firstName": "Evan",
+    "lastName": "d'Huart",
+    "email": "richard@gmail.com",
+    "favoriteColor": "blue",
     "birthday": "01/01/2000"
 }
 
 ### PUT Contact
-PUT https://week3-iayg.onrender.com/contacts/645d1dfeb48627ffc15bcf42 HTTP/1.1
+PUT https://week3-iayg.onrender.com/contacts/645d204e813c3be24ea7e229 HTTP/1.1
 content-type: application/json
 
 {
-        "firstName": "Jason",
-        "lastName": "Clark",
-        "email": "clarkjasonk@gmail.com",
+        "firstName": "Evan",
+        "lastName": "d'Huart",
+        "email": "evan@gmail.com",
         "favoriteColor": "black",
         "birthday": "10/11/85"
 }
 
 ### DELETE contact
-DELETE https://week3-iayg.onrender.com/contacts/645d1dfeb48627ffc15bcf42 HTTP/1.1
+DELETE https://week3-iayg.onrender.com/contacts/645e69938428c49972596cba HTTP/1.1
 
 ###
 GET https://week3-iayg.onrender.com/contacts HTTP/1.1
