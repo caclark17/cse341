@@ -5,12 +5,19 @@
     "description": "Contacts API",
     "version": "1.0.0"
   },
-  "host": "https://week3-iayg.onrender.com",
+  "host": "week3-iayg.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/contacts/": {
       "get": {
         "description": "",
